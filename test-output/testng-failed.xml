@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.crm.qa.test.HomeTest">
+        <methods>
+          <include name="verifyCalenderPage"/>
+          <include name="verifyManuClick"/>
+          <include name="setup"/>
+          <include name="showMenuList"/>
+          <include name="tearDown"/>
+          <include name="verifyContactPage"/>
+        </methods>
+      </class> <!-- com.crm.qa.test.HomeTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
