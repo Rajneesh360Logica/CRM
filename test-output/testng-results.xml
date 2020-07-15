@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="1" ignored="2" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="41260" started-at="2020-07-15T19:03:36Z" finished-at="2020-07-15T19:04:17Z">
+  <suite name="Default suite" duration-ms="12509" started-at="2020-07-15T19:21:01Z" finished-at="2020-07-15T19:21:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41260" started-at="2020-07-15T19:03:36Z" finished-at="2020-07-15T19:04:17Z">
+    <test name="Default test" duration-ms="12509" started-at="2020-07-15T19:21:01Z" finished-at="2020-07-15T19:21:14Z">
       <class name="com.crm.qa.test.LoginTest">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.crm.qa.test.LoginTest@6f7fd0e6]" name="setExtent" is-config="true" duration-ms="177" started-at="2020-07-16T00:33:36Z" finished-at="2020-07-16T00:33:36Z">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.crm.qa.test.LoginTest@77caeb3e]" name="setExtent" is-config="true" duration-ms="139" started-at="2020-07-16T00:51:01Z" finished-at="2020-07-16T00:51:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.test.LoginTest@6f7fd0e6]" name="setup" is-config="true" duration-ms="12777" started-at="2020-07-16T00:33:36Z" finished-at="2020-07-16T00:33:49Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.test.LoginTest@77caeb3e]" name="setup" is-config="true" duration-ms="11495" started-at="2020-07-16T00:51:01Z" finished-at="2020-07-16T00:51:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="validatePageTitle()[pri:1, instance:com.crm.qa.test.LoginTest@6f7fd0e6]" name="validatePageTitle" duration-ms="28" started-at="2020-07-16T00:33:49Z" finished-at="2020-07-16T00:33:49Z">
+        <test-method status="FAIL" signature="validatePageTitle()[pri:1, instance:com.crm.qa.test.LoginTest@77caeb3e]" name="validatePageTitle" duration-ms="18" started-at="2020-07-16T00:51:13Z" finished-at="2020-07-16T00:51:13Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Cogmento CRM1] but found [Cogmento CRM]]]>
@@ -60,56 +60,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePageTitle -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.test.LoginTest@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="1092" started-at="2020-07-16T00:33:49Z" finished-at="2020-07-16T00:33:50Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.test.LoginTest@77caeb3e]" name="tearDown" is-config="true" duration-ms="978" started-at="2020-07-16T00:51:13Z" finished-at="2020-07-16T00:51:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validatePageTitle status=FAILURE method=LoginTest.validatePageTitle()[pri:1, instance:com.crm.qa.test.LoginTest@6f7fd0e6] output={null}]]]>
+                <![CDATA[[TestResult name=validatePageTitle status=FAILURE method=LoginTest.validatePageTitle()[pri:1, instance:com.crm.qa.test.LoginTest@77caeb3e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.test.LoginTest@6f7fd0e6]" name="setup" is-config="true" duration-ms="11296" started-at="2020-07-16T00:33:50Z" finished-at="2020-07-16T00:34:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateInvalidLogin()[pri:2, instance:com.crm.qa.test.LoginTest@6f7fd0e6]" name="validateInvalidLogin" duration-ms="1322" started-at="2020-07-16T00:34:01Z" finished-at="2020-07-16T00:34:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateInvalidLogin -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.test.LoginTest@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="1302" started-at="2020-07-16T00:34:03Z" finished-at="2020-07-16T00:34:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateInvalidLogin status=SUCCESS method=LoginTest.validateInvalidLogin()[pri:2, instance:com.crm.qa.test.LoginTest@6f7fd0e6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.test.LoginTest@6f7fd0e6]" name="setup" is-config="true" duration-ms="11344" started-at="2020-07-16T00:34:04Z" finished-at="2020-07-16T00:34:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateLogin()[pri:2, instance:com.crm.qa.test.LoginTest@6f7fd0e6]" name="validateLogin" duration-ms="1398" started-at="2020-07-16T00:34:15Z" finished-at="2020-07-16T00:34:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLogin -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.test.LoginTest@6f7fd0e6]" name="tearDown" is-config="true" duration-ms="675" started-at="2020-07-16T00:34:17Z" finished-at="2020-07-16T00:34:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateLogin status=SUCCESS method=LoginTest.validateLogin()[pri:2, instance:com.crm.qa.test.LoginTest@6f7fd0e6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endreport()[pri:0, instance:com.crm.qa.test.LoginTest@6f7fd0e6]" name="endreport" is-config="true" duration-ms="370" started-at="2020-07-16T00:34:17Z" finished-at="2020-07-16T00:34:18Z">
+        <test-method status="PASS" signature="endreport()[pri:0, instance:com.crm.qa.test.LoginTest@77caeb3e]" name="endreport" is-config="true" duration-ms="317" started-at="2020-07-16T00:51:14Z" finished-at="2020-07-16T00:51:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endreport -->
