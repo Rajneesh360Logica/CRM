@@ -3,7 +3,9 @@ package com.crm.qa.util;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
+import java.util.Base64;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
@@ -68,7 +70,9 @@ public class TestUtil extends BaseTest{
 			TakesScreenshot scrShot =((TakesScreenshot)driver);
 			
 			// Call getScreenshotAs method to create image file
-			File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+			//File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+			String SrcFile=scrShot.getScreenshotAs(OutputType.BASE64);
+			File file = OutputType.FILE.convertFromBase64Png(SrcFile);
 			
 			//Move image file to new destination
 			String currentDir=System.getProperty("user.dir");
@@ -78,10 +82,11 @@ public class TestUtil extends BaseTest{
 			//File DestFile=new File(currentDir+"\\Screenshots\\"+System.currentTimeMillis()+".png");
 			// Copy file to Desired Location
 			
-		    destination=currentDir+"\\Report\\"+screenshotName+dateName+".png";
+		    destination=currentDir+"\\Screenshots\\"+screenshotName+dateName+".png";
 			File finalDestnation=new File(destination);
 		
-				FileUtils.copyFile(SrcFile, finalDestnation);
+				//FileUtils.copyFile(SrcFile, finalDestnation);
+			FileUtils.copyFile(file, finalDestnation);
 				
 			} 
 		catch (Exception e) 
