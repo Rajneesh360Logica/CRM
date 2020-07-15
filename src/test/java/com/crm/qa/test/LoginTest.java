@@ -5,11 +5,8 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.crm.qa.base.BaseTest;
 import com.crm.qa.pages.HomePage;
@@ -61,11 +58,6 @@ public class LoginTest extends BaseTest {
 		Assert.assertEquals(mgs, "Something went wrong...", "Validation message is not correct");
 	}
 	
-	/*@AfterMethod
-	public void teardown()
-	{
-		driver.quit();
-	}*/
 	@AfterMethod
 	public void tearDown(ITestResult result) throws IOException
 	{
@@ -84,8 +76,8 @@ public class LoginTest extends BaseTest {
 		{
 			test.log(Status.PASS, "Test Case Passed is: "+result.getName());
 		}
-		extent.flush();
+		
 		driver.quit();
 	}
-
+	
 }

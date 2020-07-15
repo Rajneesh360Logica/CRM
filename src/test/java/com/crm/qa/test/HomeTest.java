@@ -69,11 +69,6 @@ public class HomeTest extends BaseTest {
 		Assert.assertEquals(contact.getContactHeader(), "Contacts", "Incorrect landing page.");
 	}
 	
-	/*@AfterMethod
-	public void teardown()
-	{
-		driver.quit();
-	}*/
 	
 	@AfterMethod
 	public void tearDown(ITestResult result) throws IOException
@@ -93,7 +88,6 @@ public class HomeTest extends BaseTest {
 		{
 			test.log(Status.PASS, "Test Case Passed is: "+result.getName());
 		}
-		extent.flush();
 		driver.quit();
 	}
 	
