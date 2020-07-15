@@ -55,6 +55,7 @@ public class BaseTest {
 		htmlReporter.config().setDocumentTitle("Automtion Report");
 		htmlReporter.config().setReportName("Funcational Report");
 		htmlReporter.config().setTheme(Theme.STANDARD);
+		htmlReporter.config().setAutoCreateRelativePathMedia(false);
 		
 		extent=new ExtentReports();
 		extent.attachReporter(htmlReporter);
