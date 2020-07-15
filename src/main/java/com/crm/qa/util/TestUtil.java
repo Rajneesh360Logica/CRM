@@ -78,7 +78,7 @@ public class TestUtil extends BaseTest{
 			//File DestFile=new File(currentDir+"\\Screenshots\\"+System.currentTimeMillis()+".png");
 			// Copy file to Desired Location
 			
-		    destination=currentDir+"\\Screenshots\\"+screenshotName+dateName+".png";
+		    destination=currentDir+"Report\\Screenshots\\"+screenshotName+dateName+".png";
 			File finalDestnation=new File(destination);
 		
 				FileUtils.copyFile(SrcFile, finalDestnation);
