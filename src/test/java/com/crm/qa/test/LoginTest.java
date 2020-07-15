@@ -37,7 +37,7 @@ public class LoginTest extends BaseTest {
 		test=extent.createTest("validatePageTitle");
 		String title=loginPage.getPageTitle();
 		System.out.println("Page tile is: "+ title);
-		Assert.assertEquals(title, "Cogmento CRM");
+		Assert.assertEquals(title, "Cogmento CRM1");
 	}
 	
 	@Test(priority=2)
