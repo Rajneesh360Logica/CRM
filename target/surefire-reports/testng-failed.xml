@@ -3,17 +3,15 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Free CRM Test suite]">
   <test name="Free CRM test case(failed)">
     <classes>
-      <class name="com.crm.qa.test.ContactTest">
+      <class name="com.crm.qa.test.LoginTest">
         <methods>
-          <include name="validateCreateContact" invocation-numbers="1 2 3"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
           <include name="endreport"/>
-          <include name="validateSelectContact"/>
+          <include name="validatePageTitle"/>
           <include name="setExtent"/>
-          <include name="validateDeleteContact"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.crm.qa.test.ContactTest -->
+      </class> <!-- com.crm.qa.test.LoginTest -->
     </classes>
   </test> <!-- Free CRM test case(failed) -->
 </suite> <!-- Failed suite [Free CRM Test suite] -->

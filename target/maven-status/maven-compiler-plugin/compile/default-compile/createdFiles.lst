@@ -1,0 +1,10 @@
+com\crm\qa\base\BaseTest.class
+com\crm\qa\util\WebEventListner.class
+com\crm\qa\pages\HomePage.class
+com\crm\qa\pages\LoginPage.class
+com\crm\qa\pages\Customer.class
+com\crm\qa\pages\SignUP.class
+com\crm\qa\pages\Contact.class
+com\crm\qa\util\TestUtil.class
+com\crm\qa\pages\Pricing.class
+com\crm\qa\pages\Calendar.class
