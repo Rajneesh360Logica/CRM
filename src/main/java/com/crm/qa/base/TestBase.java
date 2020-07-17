@@ -43,7 +43,8 @@ public class TestBase {
 	@BeforeSuite
 	public void setExtent()
 	{
-	    htmlReporter=new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Report/FreeCRM_"+Helper.getCurrentDateTime()+".html"));
+	   // htmlReporter=new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Report/FreeCRM_"+Helper.getCurrentDateTime()+".html"));
+	    htmlReporter=new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Report/FreeCRM.html"));
 		htmlReporter.config().setDocumentTitle("Automtion Report");
 		htmlReporter.config().setReportName("Funcational Report");
 		htmlReporter.config().setTheme(Theme.STANDARD);
