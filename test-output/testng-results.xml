@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="2" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12754" started-at="2020-07-15T19:45:39Z" finished-at="2020-07-15T19:45:52Z">
+  <suite name="Default suite" duration-ms="15665" started-at="2020-07-17T06:24:03Z" finished-at="2020-07-17T06:24:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12754" started-at="2020-07-15T19:45:39Z" finished-at="2020-07-15T19:45:52Z">
+    <test name="Default test" duration-ms="15665" started-at="2020-07-17T06:24:03Z" finished-at="2020-07-17T06:24:19Z">
       <class name="com.crm.qa.test.LoginTest">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.crm.qa.test.LoginTest@77caeb3e]" name="setExtent" is-config="true" duration-ms="144" started-at="2020-07-16T01:15:39Z" finished-at="2020-07-16T01:15:39Z">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.crm.qa.test.LoginTest@1bce4f0a]" name="setExtent" is-config="true" duration-ms="344" started-at="2020-07-17T11:54:03Z" finished-at="2020-07-17T11:54:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.test.LoginTest@77caeb3e]" name="setup" is-config="true" duration-ms="11779" started-at="2020-07-16T01:15:39Z" finished-at="2020-07-16T01:15:51Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.test.LoginTest@1bce4f0a]" name="setup" is-config="true" duration-ms="14330" started-at="2020-07-17T11:54:03Z" finished-at="2020-07-17T11:54:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="validatePageTitle()[pri:1, instance:com.crm.qa.test.LoginTest@77caeb3e]" name="validatePageTitle" duration-ms="19" started-at="2020-07-16T01:15:51Z" finished-at="2020-07-16T01:15:51Z">
+        <test-method status="FAIL" signature="validatePageTitle()[pri:1, instance:com.crm.qa.test.LoginTest@1bce4f0a]" name="validatePageTitle" duration-ms="34" started-at="2020-07-17T11:54:17Z" finished-at="2020-07-17T11:54:18Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Cogmento CRM1] but found [Cogmento CRM]]]>
@@ -28,7 +28,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:115)
 	at org.testng.Assert.assertEquals(Assert.java:189)
 	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.crm.qa.test.LoginTest.validatePageTitle(LoginTest.java:40)
+	at com.crm.qa.test.LoginTest.validatePageTitle(LoginTest.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -60,18 +60,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePageTitle -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.test.LoginTest@77caeb3e]" name="tearDown" is-config="true" duration-ms="940" started-at="2020-07-16T01:15:51Z" finished-at="2020-07-16T01:15:52Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.crm.qa.test.LoginTest@1bce4f0a]" name="tearDown" is-config="true" duration-ms="1268" started-at="2020-07-17T11:54:18Z" finished-at="2020-07-17T11:54:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validatePageTitle status=FAILURE method=LoginTest.validatePageTitle()[pri:1, instance:com.crm.qa.test.LoginTest@77caeb3e] output={null}]]]>
+                <![CDATA[[TestResult name=validatePageTitle status=FAILURE method=LoginTest.validatePageTitle()[pri:1, instance:com.crm.qa.test.LoginTest@1bce4f0a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endreport()[pri:0, instance:com.crm.qa.test.LoginTest@77caeb3e]" name="endreport" is-config="true" duration-ms="262" started-at="2020-07-16T01:15:52Z" finished-at="2020-07-16T01:15:52Z">
+        <test-method status="PASS" signature="endreport()[pri:0, instance:com.crm.qa.test.LoginTest@1bce4f0a]" name="endreport" is-config="true" duration-ms="648" started-at="2020-07-17T11:54:19Z" finished-at="2020-07-17T11:54:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endreport -->

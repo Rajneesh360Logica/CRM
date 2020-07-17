@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 41.429 s <<< FAILURE! - in TestSuite
-validatePageTitle(com.crm.qa.test.LoginTest)  Time elapsed: 0.029 s  <<< FAILURE!
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 44.879 s <<< FAILURE! - in TestSuite
+validatePageTitle(com.crm.qa.test.LoginTest)  Time elapsed: 0.014 s  <<< FAILURE!
 java.lang.AssertionError: expected [Cogmento CRM1] but found [Cogmento CRM]
-	at com.crm.qa.test.LoginTest.validatePageTitle(LoginTest.java:40)
+	at com.crm.qa.test.LoginTest.validatePageTitle(LoginTest.java:41)
 

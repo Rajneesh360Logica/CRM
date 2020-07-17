@@ -9,13 +9,13 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
-import com.crm.qa.base.BaseTest;
+import com.crm.qa.base.TestBase;
 import com.crm.qa.pages.Contact;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
-import com.crm.qa.util.TestUtil;
+import com.crm.qa.util.Helper;
 
-public class ContactTest extends BaseTest{
+public class ContactTest extends TestBase{
 	
 	Contact contactPage;
 	LoginPage loginPage;
@@ -55,7 +55,7 @@ public class ContactTest extends BaseTest{
 	@DataProvider
 	public Object [][] getCRMTestData()
 	{
-		Object data[][]=TestUtil.getTestData(prop.getProperty("sheetName"));
+		Object data[][]=Helper.getTestData(prop.getProperty("sheetName"));
 		return data;
 	}
 	
@@ -75,7 +75,7 @@ public class ContactTest extends BaseTest{
 		if(result.getStatus()==ITestResult.FAILURE)
 		{
 			test.log(Status.FAIL, "Test Case Failed is: "+result.getName());
-			String screenshotPath=TestUtil.takeScreenshot(result.getName());
+			String screenshotPath=Helper.takeScreenshot(result.getName());
 			test.addScreenCaptureFromPath(screenshotPath);
 		}
 		

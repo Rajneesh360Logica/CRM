@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.crm.qa.base.BaseTest;
+import com.crm.qa.base.TestBase;
 
-public class Contact extends BaseTest {
+public class Contact extends TestBase {
 	
 	
 	

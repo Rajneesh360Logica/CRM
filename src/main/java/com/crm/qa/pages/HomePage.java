@@ -7,9 +7,9 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.crm.qa.base.BaseTest;
+import com.crm.qa.base.TestBase;
 
-public class HomePage extends BaseTest{
+public class HomePage extends TestBase{
 	
 	Object object;
 	String menuName;

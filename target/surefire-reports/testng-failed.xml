@@ -5,11 +5,11 @@
     <classes>
       <class name="com.crm.qa.test.LoginTest">
         <methods>
-          <include name="endreport"/>
-          <include name="validatePageTitle"/>
           <include name="setExtent"/>
+          <include name="validatePageTitle"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="endreport"/>
         </methods>
       </class> <!-- com.crm.qa.test.LoginTest -->
     </classes>

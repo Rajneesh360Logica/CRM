@@ -9,14 +9,14 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
-import com.crm.qa.base.BaseTest;
+import com.crm.qa.base.TestBase;
 import com.crm.qa.pages.Calendar;
 import com.crm.qa.pages.Contact;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
-import com.crm.qa.util.TestUtil;
+import com.crm.qa.util.Helper;
 
-public class HomeTest extends BaseTest {
+public class HomeTest extends TestBase {
 	
 	LoginPage loginPage;
 	HomePage homePage;
@@ -76,7 +76,7 @@ public class HomeTest extends BaseTest {
 		if(result.getStatus()==ITestResult.FAILURE)
 		{
 			test.log(Status.FAIL, "Test Case Failed is: "+result.getName());
-			String screenshotPath=TestUtil.takeScreenshot(result.getName());
+			String screenshotPath=Helper.takeScreenshot(result.getName());
 			test.addScreenCaptureFromPath(screenshotPath);
 		}
 		
