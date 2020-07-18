@@ -5,25 +5,15 @@
     <classes>
       <class name="com.crm.qa.test.LoginTest">
         <methods>
-          <include name="endreport"/>
+          <include name="validateInvalidLogin"/>
+          <include name="setExtent"/>
           <include name="validatePageTitle"/>
           <include name="validateLogin"/>
-          <include name="setExtent"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="endreport"/>
         </methods>
       </class> <!-- com.crm.qa.test.LoginTest -->
-      <class name="com.crm.qa.test.ContactTest">
-        <methods>
-          <include name="validateCreateContact" invocation-numbers="0 1 2 3"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="endreport"/>
-          <include name="validateSelectContact"/>
-          <include name="setExtent"/>
-          <include name="validateDeleteContact"/>
-        </methods>
-      </class> <!-- com.crm.qa.test.ContactTest -->
     </classes>
   </test> <!-- Free CRM test case(failed) -->
 </suite> <!-- Failed suite [Free CRM Test suite] -->

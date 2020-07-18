@@ -2,6 +2,8 @@ package com.crm.qa.util;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -94,6 +96,36 @@ public class Helper extends TestBase{
 		return System.getProperty("user.dir");
 	}
 	
+	// To get machine name
+	public static String getMachineName()
+	{
+		String hostname = "Unknown";
+		try
+		{
+		    InetAddress addr;
+		    addr = InetAddress.getLocalHost();
+		    hostname = addr.getHostName();
+		}
+		catch (UnknownHostException ex)
+		{
+		   ex.printStackTrace();
+		}
+		return hostname;
+	}
+	
+	// To get user name 
+	public static String getUsername()
+	{
+		return System.getProperty("user.name");
+	}
+	
+	// To get user name
+	public static String getOpetatingSystem()
+	{
+		return System.getProperty("os.name");
+	}
+
+		
 	//To get current date time
 	public static String getCurrentDateTime()
 	{

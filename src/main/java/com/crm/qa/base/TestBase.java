@@ -53,9 +53,9 @@ public class TestBase {
 		extent=new ExtentReports();
 		extent.attachReporter(htmlReporter);
 		
-		extent.setSystemInfo("HostName", "360NDCLP182");
-		extent.setSystemInfo("OS", "Windows 10");
-		extent.setSystemInfo("User", "Rajneesh");
+		extent.setSystemInfo("HostName", Helper.getMachineName());
+		extent.setSystemInfo("OS", Helper.getOpetatingSystem());
+		extent.setSystemInfo("User", Helper.getUsername());
 		extent.setSystemInfo("Browser", prop.getProperty("browser"));
 	}
 	

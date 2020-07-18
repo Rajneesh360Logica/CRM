@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Free CRM Test suite]">
+  <test name="Free CRM test case(failed)">
     <classes>
       <class name="com.crm.qa.test.LoginTest">
         <methods>
+          <include name="validateInvalidLogin"/>
           <include name="setExtent"/>
           <include name="validatePageTitle"/>
+          <include name="validateLogin"/>
           <include name="setup"/>
           <include name="tearDown"/>
           <include name="endreport"/>
         </methods>
       </class> <!-- com.crm.qa.test.LoginTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Free CRM test case(failed) -->
+</suite> <!-- Failed suite [Free CRM Test suite] -->
