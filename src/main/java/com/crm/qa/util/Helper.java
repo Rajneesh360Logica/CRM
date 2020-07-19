@@ -15,8 +15,6 @@ import org.openqa.selenium.TakesScreenshot;
 
 import com.crm.qa.base.TestBase;
 
-import net.bytebuddy.implementation.bytecode.ByteCodeAppender.Size;
-
 public class Helper extends TestBase{
 	
 	public static long PAGE_LOD_TIMEOUT=20;
@@ -131,5 +129,11 @@ public class Helper extends TestBase{
 	{
 		String currentDateTime=new SimpleDateFormat("yyyy_MM_dd_hh_mm_ss").format(new Date());
 	    return currentDateTime;
+	}
+	
+	//to sent text in textbox
+	public static void sendkeys()
+	{
+		
 	}
 }
